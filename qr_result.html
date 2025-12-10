@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Generate QR-CODE(Digital Restaurant Menu)</title>
+   <!--bootstrap css cdn-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--bootstrap js cdn-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class"navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a href="" class="navbar-brand" 
+   style="background-color: #FFC0CB; color: #4B0082; font-weight: bold; padding: 5px 10px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px;">
+  DineSmart
+</a>
+        </div>
+    </nav>
+    <!--qr code download-->
+    <div class="container mt-5 align-item-center text-center">
+        <h2>
+            {{res_name}}
+        </h2>
+        <img src="{{qr_url}}" alt="QR CODE" style ="border:4px solid #800080;">
+        <div>
+            <a href="{{qr_url}}"download="{{filename}}" class="btn btn-primary mt-3">DOWNLOAD QR CODE</a>
+            <br> <small style="display: block; margin-top: 10px;font-weight: bold;">
+  Thank You For Visiting Our Restaurant
+</small></br>
+        </div>
+
+    </div>
+  <!-- Footer -->
+<footer style="background-color: #A48AD4; color: white; text-align: center; padding: 15px 0; padding-left: 30px; position: fixed; bottom: 0; width: 100%; font-weight: bold;">
+  <p>
+    © 2025 | Developed by:
+    <a href="https://github.com/UMMERFAROOQSHAH" 
+       target="_blank" 
+       class="developer-link">
+       UMMER FAROOQ SHAH
+    </a>
+  </p>
+</footer>
+<style>
+  .developer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* smooth color change */
+  }
+  .developer-link:hover {
+    color: #FFD700; /* gold color on hover, you can change it */
+  }
+</style>
+</body>
+</html>
